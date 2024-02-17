@@ -77,7 +77,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/aosp/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_SKUS += nfc
 DEVICE_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest_nfc.xml
@@ -95,7 +95,7 @@ TARGET_KERNEL_NO_GCC := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 # Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+#TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072                   # 2048      * 64   (pagesize)
